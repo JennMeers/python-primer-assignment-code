@@ -26,8 +26,8 @@ about_me_set = set(about_me.values())
 about_user_set = set(about_user.values())
 
 similar_interests = about_me_set & about_user_set
-for key in similar_interests:
-    print(f"You and I have {key} in common in our lists")
+for item in similar_interests:
+    print(f"You and I have {item} in common in our lists")
 
 if (len(similar_interests) == 0):
     print("Looks like you and I don't have anything in common on our lists today")
